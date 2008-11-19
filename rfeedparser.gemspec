@@ -1,7 +1,7 @@
 --- !ruby/object:Gem::Specification 
 name: rfeedparser
 version: !ruby/object:Gem::Version 
-  version: 0.9.951.1
+  version: 0.9.951.2
 platform: ruby
 authors: 
 - Jeff Hodges
