@@ -39,6 +39,13 @@ Rake::GemPackageTask.new(spec) do |pkg|
   pkg.need_zip = true
 end
 
+desc "Write the .gemspec"
+task :write_gemspec do
+  File.open('rfeedparser.gemspec', 'w') do |io|
+    io << YAML::dump(spec)
+  end
+end
+
 Rake::TestTask.new do |t|
   t.libs << "test"
   t.test_files = FileList['tests/rfeedparsertest.rb']
